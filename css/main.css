@@ -1,0 +1,2217 @@
+/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  font-family: 'Lato', sans-serif;
+
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.container
+{
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+
+}
+
+
+
+header
+{
+  height: 100%;
+  width: 100%;
+   background: url(../img/header-bg.jpg) no-repeat;
+    
+    background-size: cover; /* Современные браузеры */
+   /* background-size: contain;*/
+    background-position:  top;
+}
+header .header-top
+{
+  background: rgba(16,22,54, 0.2);
+  height: 50px;
+  width: 100%;
+  
+  position: relative;
+}
+
+header .logo
+{
+  width: 90px;
+  position: absolute;
+  top: 22px;
+}
+
+
+header .short-tag
+{
+  font-size: 14px;
+  color: white;
+  opacity: 0.3;
+  position: absolute;
+  top: 24px;
+  left: 143px;
+}
+
+header .short-tag:before
+{
+  content: "";
+  width: 2px;
+  height: 15px;
+  position: absolute;
+  left: -20px;
+  top:2px;
+  background: rgb(53,120,160);
+}
+
+header .short-tag2
+{
+  
+  font-size: 14px;
+  color: white;
+  opacity: 0.3;
+  position: absolute;
+  top: 24px;
+  left: 1100px;
+  margin-left:  10px;
+  word-spacing: 30px;
+  font-family: 'Lato', sans-serif;
+}
+
+
+.container2
+{
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+header .header-center
+{
+  height: 960px;
+  width: 100%;
+}
+
+
+header .logo_center
+{
+  width: 463px;
+  position: absolute;
+  top: 346px;
+  left: 630px;
+}
+
+header .long-tag
+{
+  font-size: 48px;
+  color: white;
+  position: absolute;
+  font-family: 'Lato', sans-serif;
+  top: 410px;
+  left: 465px;
+}
+header .attest
+{
+  font-size: 18px;
+  color: white;
+  position: absolute;
+  font-family: 'Lato', sans-serif;
+  top: 520px;
+  left: 620px;
+}
+
+header .attest:before
+{
+  content: "";
+  width: 28px;
+  height: 1px;
+  position: absolute;
+  left: -50px;
+  top: 14px;
+  background: rgb(76,118,255);
+}
+header .attest:after
+{
+  content: "";
+  width: 28px;
+  height: 1px;
+  position: absolute;
+  left: 250px;
+  top: 14px;
+  background: rgb(76,118,255);
+}
+header .social
+{
+  position: absolute;
+  top: 670px;
+  left: 650px;
+  word-spacing: 30px;
+}
+
+header .social img
+{
+  opacity: 0.7;
+  font-size: 48px;
+  color: #fff;
+  
+}
+header .google
+{
+  position: absolute;
+  top: 670px;
+  left: 800px;
+  
+}
+/*header nav 
+{
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+
+  font-size: 14px;
+  color: white;
+  opacity: 0.6;
+  font-family: 'Lato', sans-serif;
+
+}
+header nav a
+{
+  color: #FFF;
+  font-size: 12px;
+  text-decoration: none;
+  margin-right: 13px;
+  height: 100%;
+  display: block;
+  float: left;
+  padding: 0px 10px;
+  line-height: 5;
+}
+header nav a:last-child
+{
+  margin-right: 0;
+}
+header nav a.active
+{
+  border-top: 1px solid #32b0ee;
+}
+*/
+header .modile
+{
+  display: none;
+  color: #FFF;
+  font-size: 24px;
+  position: absolute;
+  top:10px;
+  right: 0;
+}
+ul {
+    /* Убираю маркеры у списка*/
+    list-style: none;
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Убираю отступы. */
+    margin:0px;
+    /* Убираю еще отступы! */
+    padding:0px;
+    position: absolute;
+    right: 130px;
+  }
+ul:after {
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Убираю выравнивание. */
+    float: none;
+    content: ' ';
+    clear: both;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  position: absolute;
+    right: 120px;
+    top: -10px;
+}
+
+.menu__item2 {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+    left: -45px;
+    top: -10px;
+}
+
+.menu__item3 {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+    left: 30px;
+    top: -54px;
+}
+
+
+.menu__item4 {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+    left: 84px;
+    top: -99px;
+}
+.menu__item5 {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+    left: 140px;
+    top: -143px;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0px;
+  height: 0px;
+  width: 320px;
+}
+.my-flex-container
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: absolute;
+  top: 155px;
+  right: 45px;
+  display: none;
+}
+
+/*=======================================
+* RESPONSIVE Design
+=========================================*/
+@media (max-width: 1150px)
+{
+  .container 
+  {
+    width: 100%;
+  }
+  
+}
+
+@media (max-width: 815px)
+{
+  .container 
+  {
+    width: 100%;
+  }
+}
+@media (max-width: 500px)
+{
+  header nav 
+  {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+
+    font-size: 14px;
+    color: white;
+    opacity: 0.6;
+    font-family: 'Lato', sans-serif;
+
+  }
+header nav a
+  {
+    color: #FFF;
+    font-size: 12px;
+    text-decoration: none;
+    margin-right: 13px;
+    height: 100%;
+    display: block;
+    float: left;
+    padding: 0px 10px;
+    line-height: 5;
+    display: none
+  }
+header nav a:last-child
+  {
+    margin-right: 0;
+  }
+header nav a.active
+  {
+    border-top: 1px solid #32b0ee;
+  }
+
+header .modile
+  {
+    display: none;
+    color: #FFF;
+    font-size: 24px;
+    position: absolute;
+    top:10px;
+    right: 0;
+  }
+
+}
+/*=======================================
+* HEADER
+=========================================*/
+/*Блок header с логотипом (размеры под 1000 пикс) - Сделано */
+@media (max-width: 1024px)
+{
+  .container2 
+  {
+    width: 100%;
+    background: url(../img/header-bg.jpg) no-repeat;
+    background-size: contain;
+    background-position: right, left;
+
+  }
+  header .logo_center
+  {
+    
+    position: absolute;
+    top: 200px;
+    left: 400px;
+  }
+  header .long-tag
+  {
+    font-size: 48px;
+    color: white;
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    top: 255px;
+    left: 240px;
+  }
+  header .header-center
+  {
+    height: 632px;
+    width: 100%;
+  }
+  header .attest
+  {
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    top: 320px;
+    left: 400px
+  }
+
+  header .attest:before
+  {
+    content: "";
+    width: 28px;
+    height: 1px;
+    position: absolute;
+    left: -50px;
+    top: 14px;
+    background: rgb(76,118,255);
+  }
+  header .attest:after
+  {
+    content: "";
+    width: 28px;
+    height: 1px;
+    position: absolute;
+    left: 250px;
+    top: 14px;
+    background: rgb(76,118,255);
+  }
+  header .social
+  {
+    position: absolute;
+    top: 370px;
+    left: 435px;
+    word-spacing: 30px;
+  }
+
+header .social img
+  {
+    opacity: 0.7;
+    font-size: 48px;
+    color: #fff;
+    
+  }
+header .google
+  {
+    position: absolute;
+    top: 370px;
+    left: 582px;
+    
+  }
+}
+
+/*Блок header с логотипом (размеры под 768 пикс) - DONE */
+@media (max-width: 800px)
+{
+  .container2 
+  {
+    width: 100%;
+    background-size: cover;
+  }
+  header .logo_center
+  {
+    
+    position: absolute;
+    top: 147px;
+    left: 315px;
+  }
+  header .logo_center img
+  {
+    width: 150px;
+    position: absolute;
+   
+  }
+  header .long-tag
+  {
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    top: 180px;
+    left: 365px;
+  }
+  header .creative
+  {
+    font-size: 17px;
+    color: #4b72f1;
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    top: 0px;
+    left: -70px;
+  }
+
+  header .header-center
+  {
+    height: 463px;
+    width: 100%;
+  }
+  header .attest
+  {
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    top: 210px;
+    left: 275px;
+  }
+
+  header .attest:before
+  {
+    content: "";
+    width: 28px;
+    height: 1px;
+    position: absolute;
+    left: -50px;
+    top: 14px;
+    background: rgb(76,118,255);
+  }
+  header .attest:after
+  {
+    content: "";
+    width: 28px;
+    height: 1px;
+    position: absolute;
+    left: 250px;
+    top: 14px;
+    background: rgb(76,118,255);
+  }
+  header .social
+  {
+    position: absolute;
+    top: 270px;
+    left: 290px;
+    word-spacing: 30px;
+  }
+
+header .social img
+  {
+    opacity: 0.7;
+    font-size: 48px;
+    color: #fff;
+    
+  }
+header .google
+  {
+    position: absolute;
+    top: 270px;
+    left: 445px;
+    
+  }
+}
+/*Блок header с логотипом (размеры под 400 пикс) - Сделано */
+@media (max-width: 450px)
+{
+  .container2 
+  {
+    width: 100%;
+    background-size: cover;
+    background: url(../img/header-bg.jpg) no-repeat;
+    /*background-size: contain;*/
+    background-position: left;
+  }
+  header .logo_center
+  {
+    width: 100%;
+    position: absolute;
+    top: 55px;
+    left: 165px;
+  }
+  header .logo_center img
+  {
+    width: 60px;
+    position: absolute;
+   
+  }
+  header .long-tag
+  {
+    font-size: 10px;
+    color: white;
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    top: 70px;
+    left: 170px;
+  }
+  header .creative
+  {
+    font-size: 10px;
+    color: #4b72f1;
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    top: 0px;
+    left: -40px;
+  }
+
+  header .header-center
+  {
+    height: 230px;
+    width: 100%;
+  }
+  header .attest
+  {
+    font-size: 7px;
+    color: white;
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    top: 85px;
+    left: 150px;
+  }
+
+  header .attest:before
+  {
+    content: "";
+    width: 28px;
+    height: 1px;
+    position: absolute;
+    left: -35px;
+    top: 5px;
+    background: rgb(76,118,255);
+  }
+  header .attest:after
+  {
+    content: "";
+    width: 28px;
+    height: 1px;
+    position: absolute;
+    left: 95px;
+    top: 5px;
+    background: rgb(76,118,255);
+  }
+  header .social
+  {
+    position: absolute;
+    top: 110px;
+    left: 150px;
+    word-spacing: 20px;
+  }
+
+header .social img
+  {
+    opacity: 0.7;
+    width:  5%;
+    color: #fff;
+    
+  }
+header .google
+  {
+    position: absolute;
+    top: 120px;
+    left: 235px;
+    
+  }
+header .google img
+  {
+    position: absolute;
+   
+    width:  10px;
+  }
+    /* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: fixed;
+  top: 20px;
+  left: 360px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+/* контейнер меню */
+.menu__box {
+  display: block;
+  position: fixed;
+
+  visibility: hidden;
+  top: -75px;
+  left: -100%;
+  width: 150px;
+  height: 16%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+/* элементы меню */
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  position: absolute;
+  left: -100px;
+  top: 80px;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 70px;
+    position: absolute;
+    width: 330px;
+}
+
+.menu__item2 {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+    left: -50px;
+    top: 0px;
+}
+.menu__item2:hover {
+  background-color: #CFD8DC;
+}
+.menu__item3 {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+    left: -50px;
+}
+.menu__item3:hover {
+  background-color: #CFD8DC;
+}
+
+.menu__item3 {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+    left: 6px;
+    top: -38px;
+}
+.menu__item3:hover {
+  background-color: #CFD8DC;
+}
+.menu__item4 {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+    left: 60px;
+    top: -75px;
+}
+.menu__item4:hover {
+  background-color: #CFD8DC;
+}
+.menu__item5 {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+    left: 105px;
+    top: -112px;
+}
+.menu__item5:hover {
+  background-color: #CFD8DC;
+}
+
+}
+/*Блок header с логотипом (размеры под 320 пикс) - Сделано*/ 
+@media (max-width: 330px)
+{
+  .container2 
+  {
+    width: 100%;
+    background-size: cover;
+  }
+  header .logo_center
+  {
+    width: 100%;
+    position: absolute;
+    top: 38px;
+    left: 125px;
+  }
+  header .logo_center img
+  {
+    width: 30px;
+    position: absolute;
+   
+  }
+
+
+  header .long-tag
+  {
+    font-size: 10px;
+    color: white;
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    top: 45px;
+    left: 120px;
+  }
+  header .header-center
+  {
+    height: 165px;
+    width: 100%;
+  }
+  header .attest
+  {
+    font-size: 7px;
+    color: white;
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    top: 57px;
+    left: 99px;
+  }
+
+  header .attest:before
+  {
+    content: "";
+    width: 28px;
+    height: 1px;
+    position: absolute;
+    left: -35px;
+    top: 5px;
+    background: rgb(76,118,255);
+  }
+  header .attest:after
+  {
+    content: "";
+    width: 28px;
+    height: 1px;
+    position: absolute;
+    left: 95px;
+    top: 5px;
+    background: rgb(76,118,255);
+  }
+  header .social
+  {
+    position: absolute;
+    top: 70px;
+    left: 100px;
+    word-spacing: 15px;
+  }
+
+header .social img
+  {
+    opacity: 0.7;
+    font-size: 48px;
+    color: #fff;
+    
+  }
+header .google
+  {
+    position: absolute;
+    top: 80px;
+    left: 170px;
+    
+  }
+header .google img
+  {
+    position: absolute;
+   
+    width:  7px;
+  }
+  /* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: fixed;
+  top: 14px;
+  left: 300px;;
+  width: 15px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+/* контейнер меню */
+.menu__box {
+  display: block;
+  position: fixed;
+
+  visibility: hidden;
+  top: -75px;
+  left: -100%;
+  width: 150px;
+  height: 16%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+/* элементы меню */
+.menu__item {
+  display: block;
+  padding: 13px 110px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  position: absolute;
+  left: -100px;
+  top: 80px;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+.menu__item2 {
+  display: block;
+  padding: 12px 110px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.menu__item2:hover {
+  background-color: #CFD8DC;
+}
+.menu__item3 {
+  display: block;
+  padding: 12px 120px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  top: -40px;
+}
+.menu__item3:hover {
+  background-color: #CFD8DC;
+}
+.menu__item4 {
+  display: block;
+  padding: 12px 140px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  top: -82px;
+  left: 55px;
+}
+.menu__item4:hover {
+  background-color: #CFD8DC;
+}
+.menu__item5 {
+  display: block;
+  padding: 12px 132px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  top: -124px;
+  left: 110px;
+}
+.menu__item5:hover {
+  background-color: #CFD8DC;
+}
+
+
+
+
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0px;
+  height: 0px;
+  width: 320px;
+}
+
+}
+/*=======================================
+* /HEADER
+=========================================*/
+
+body
+{
+  height: 100%;
+}
+
+body .features_top
+{
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  height: 600px;
+  background: rgb(239,239,239);
+}
+
+body .logo_features
+{
+  position: absolute;
+  top: 70px;
+  left: 690px;
+}
+
+body .heart
+{
+    position: absolute;
+    top: 120px;
+    left: 745px;
+    opacity: 0.2;
+    color: rgb(255,255,255);
+}
+
+body .heart:before
+{
+  content: "";
+  width: 90px;
+  height: 3px;
+  position: absolute;
+  left: -120px;
+  top: 13px;
+  background: rgb(53,53,54);
+  opacity: 0.9;
+}
+body .heart:after
+{
+  content: "";
+  width: 90px;
+  height: 3px;
+  position: absolute;
+  left: 45px;
+  top: 13px;
+  background: rgb(53,53,54);
+  opacity: 0.9;
+}
+body .title1
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  color: #062033;
+  position: absolute;
+  top: 220px;
+  left: 90px;
+  
+}
+body .title2
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  color: #062033;
+  position: absolute;
+  top: 220px;
+  left: 568px;
+}
+body .title3
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  color: #062033;
+  position: absolute;
+  top: 220px;
+  right: 268px;
+}
+
+body .circle_brand {
+  width: 3em;
+  height: 3em;
+  border: 2px solid #4f78ff;
+  position: absolute;
+  top: 227px;
+  left: 26px;
+  border-radius: 50%;
+  line-height: 10em;
+  
+  background: rgb(239,239,239);
+}
+body .circle_brand img {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  background: rgb(239,239,239);
+}
+body .Text1 
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  position: absolute;
+  top: 265px;
+  left: 88px;
+}
+body .circle_devel
+{
+  width: 3em;
+  height: 3em;
+  border: 2px solid #4f78ff;
+  position: absolute;
+  top: 227px;
+  left: 505px;
+  border-radius: 50%;
+  line-height: 10em;
+}
+body .circle_devel img {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  background: rgb(239,239,239);
+}
+body .Text2 
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  position: absolute;
+  top: 265px;
+  left: 570px;
+}
+body .circle_consul
+{
+  width: 3em;
+  height: 3em;
+  border: 2px solid #4f78ff;
+  position: absolute;
+  top: 227px;
+  left: 1019px;
+  border-radius: 50%;
+  line-height: 10em;
+}
+
+body .circle_consul img 
+{
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  background: rgb(239,239,239);
+}
+body .Text3 
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  position: absolute;
+  top: 265px;
+  right:  223px;
+}
+
+
+/*=======================================
+* BODY
+=========================================*/
+
+/*Блок Features (размеры под 1000 пикс) Сделан */
+
+@media (max-width: 1030px)
+{
+  .features_top
+  {
+    width: 100%;
+    
+  }
+  body .logo_features
+  {
+      position: absolute;
+      top: 70px;
+      left: 470px;
+  }
+  body .heart
+  {
+      position: absolute;
+      top: 120px;
+      left: 525px;
+      opacity: 0.2;
+      color: rgb(255,255,255);
+  }
+
+body .heart:before
+  {
+    content: "";
+    width: 90px;
+    height: 3px;
+    position: absolute;
+    left: -120px;
+    top: 13px;
+    background: rgb(53,53,54);
+    opacity: 0.9;
+  }
+body .heart:after
+  {
+    content: "";
+    width: 90px;
+    height: 3px;
+    position: absolute;
+    left: 45px;
+    top: 13px;
+    background: rgb(53,53,54);
+    opacity: 0.9;
+  }
+body .title1
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  color: #062033;
+  position: absolute;
+  top: 220px;
+  left: 90px;
+  
+}
+body .title2
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  color: #062033;
+  position: absolute;
+  top: 220px;
+  left: 408px;
+}
+body .title3
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  color: #062033;
+  position: absolute;
+  top: 220px;
+  right: 118px;
+}
+body .circle_brand {
+  width: 3em;
+  height: 3em;
+  border: 2px solid #4f78ff;
+  position: absolute;
+  top: 227px;
+  left: 26px;
+  border-radius: 50%;
+  line-height: 10em;
+  
+  background: rgb(239,239,239);
+}
+body .circle_brand img {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  background: rgb(239,239,239);
+}
+body .Text1 
+  {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    position: absolute;
+    top: 265px;
+    left: 88px;
+    
+  }
+body .circle_devel
+  {
+    width: 3em;
+    height: 3em;
+    border: 2px solid #4f78ff;
+    position: absolute;
+    top: 227px;
+    left: 345px;
+    border-radius: 50%;
+    line-height: 10em;
+  }
+body .circle_devel img {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  background: rgb(239,239,239);
+}
+body .Text2 
+  {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    position: absolute;
+    top: 265px;
+    left: 410px;
+  }
+body .circle_consul
+  {
+    width: 3em;
+    height: 3em;
+    border: 2px solid #4f78ff;
+    position: absolute;
+    top: 227px;
+    left: 690px;
+    border-radius: 50%;
+    line-height: 10em;
+  }
+
+body .circle_consul img 
+  {
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    background: rgb(239,239,239);
+  }
+body .Text3 
+  {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    position: absolute;
+    top: 265px;
+    right:  48px;
+  }
+
+
+
+
+
+}
+
+/*Блок Features (размеры под 768 пикс) DONE */
+
+@media (max-width: 800px)
+{
+  body .features_top
+  {
+    width: 100%;
+    
+  }
+  body .logo_features
+  {
+      position: absolute;
+      top: 70px;
+      left: 340px;
+  }
+  body .heart
+  {
+      position: absolute;
+      top: 120px;
+      left: 390px;
+      opacity: 0.2;
+      color: rgb(255,255,255);
+  }
+
+body .heart:before
+  {
+    content: "";
+    width: 90px;
+    height: 3px;
+    position: absolute;
+    left: -120px;
+    top: 13px;
+    background: rgb(53,53,54);
+    opacity: 0.9;
+  }
+body .heart:after
+  {
+    content: "";
+    width: 90px;
+    height: 3px;
+    position: absolute;
+    left: 45px;
+    top: 13px;
+    background: rgb(53,53,54);
+    opacity: 0.9;
+  }
+  body .title1
+  {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #062033;
+    position: absolute;
+    top: 220px;
+    left: 90px;
+    word-spacing: 240px;
+  }
+  body .title2
+  {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #062033;
+    position: absolute;
+    top: 220px;
+    left: 335px;
+    word-spacing: 240px;
+  }
+  body .title3
+  {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #062033;
+    position: absolute;
+    top: 220px;
+    left: 585px;
+    word-spacing: 240px;
+  }
+  body .Text1 
+  {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    position: absolute;
+    top: 265px;
+    left: 88px;
+    
+  }
+  body .Text2 
+  {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 249px;
+    left: 335px;
+    display: block;
+  }
+  body .Text3 
+  {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 240px;
+    left: 585px;
+    display: block;
+  }
+
+
+
+
+
+body .circle_brand {
+  width: 3em;
+  height: 3em;
+  border: 2px solid #4f78ff;
+  position: absolute;
+  top: 227px;
+  left: 26px;
+  border-radius: 50%;
+  line-height: 10em;
+  
+  background: rgb(239,239,239);
+}
+body .circle_brand img {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  background: rgb(239,239,239);
+}
+body .Text1 
+  {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 250px;
+    left: 88px;
+    
+  }
+body .circle_devel
+  {
+    width: 3em;
+    height: 3em;
+    border: 2px solid #4f78ff;
+    position: absolute;
+    top: 227px;
+    left: 270px;
+    border-radius: 50%;
+    line-height: 10em;
+  }
+body .circle_devel img {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  background: rgb(239,239,239);
+}
+
+body .circle_consul
+  {
+    width: 3em;
+    height: 3em;
+    border: 2px solid #4f78ff;
+    position: absolute;
+    top: 227px;
+    left: 520px;
+    border-radius: 50%;
+    line-height: 10em;
+  }
+
+body .circle_consul img 
+  {
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    background: rgb(239,239,239);
+  }
+
+}
+
+/*Блок Features (размеры под 400 пикс) Сделан */
+
+@media (max-width: 500px)
+{
+  .features_top
+  {
+    width: 100%;
+    
+  }
+  body .logo_features
+  {
+      position: absolute;
+      top: 70px;
+      left: 175px;
+  }
+  body .logo_features img
+  {
+      position: absolute;
+      width: 70px;
+  }
+  body .heart
+  {
+      position: absolute;
+      top: 120px;
+      left: 200px;
+      opacity: 0.2;
+      color: rgb(255,255,255);
+  }
+
+body .heart:before
+  {
+    content: "";
+    width: 90px;
+    height: 3px;
+    position: absolute;
+    left: -120px;
+    top: 13px;
+    background: rgb(53,53,54);
+    opacity: 0.9;
+  }
+body .heart:after
+  {
+    content: "";
+    width: 90px;
+    height: 3px;
+    position: absolute;
+    left: 45px;
+    top: 13px;
+    background: rgb(53,53,54);
+    opacity: 0.9;
+  }
+  ul {
+    /* Убираю маркеры у списка*/
+    list-style: none;
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Убираю отступы. */
+    margin:0px;
+    /* Убираю еще отступы! */
+    padding:0px;
+  }
+ul:after {
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Убираю выравнивание. */
+    float: none;
+    content: ' ';
+    clear: both;
+}
+
+body .my-flex-container
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: absolute;
+  top: 155px;
+  right: 30px;
+  font-family: 'Open Sans', sans-serif;
+
+}
+body .my-flex-container p
+{
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  
+  color: #062033;
+}
+
+
+body .title1
+{
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #062033;
+  position: absolute;
+  top: 160px;
+  left: 180px;
+  display: none;
+}
+
+body .title2
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  color: #062033;
+  position: absolute;
+  top: 300px;
+  left: 90px;
+  display: none;
+}
+body .title3
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  color: #062033;
+  position: absolute;
+  top: 380px;
+  right: 175px;
+  display: none;
+}
+body .circle_brand {
+  width: 3em;
+  height: 3em;
+  border: 2px solid #4f78ff;
+  position: absolute;
+  top: 170px;
+  left: 40px;
+  border-radius: 50%;
+  line-height: 10em;
+  
+  background: rgb(239,239,239);
+}
+body .circle_brand img {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  background: rgb(239,239,239);
+}
+body .Text1 
+  {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    position: absolute;
+    top: 190px;
+    left: 145px;
+    display: none;
+  }
+  body .Text2 
+  {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    position: absolute;
+    top: 190px;
+    left: 145px;
+    display: none;
+  }
+  body .Text3 
+  {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    position: absolute;
+    top: 190px;
+    left: 145px;
+    display: none;
+  }
+body .circle_devel
+  {
+    width: 3em;
+    height: 3em;
+    border: 2px solid #4f78ff;
+    position: absolute;
+    top: 308px;
+    left: 40px;
+    border-radius: 50%;
+    line-height: 10em;
+  }
+body .circle_devel img {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  background: rgb(239,239,239);
+}
+
+body .circle_consul
+  {
+    width: 3em;
+    height: 3em;
+    border: 2px solid #4f78ff;
+    position: absolute;
+    top: 460px;
+    left: 40px;
+    border-radius: 50%;
+    line-height: 10em;
+  }
+
+body .circle_consul img 
+  {
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    background: rgb(239,239,239);
+  }
+
+}
+
+/*Блок Features (размеры под 320 пикс) Сделано*/
+
+@media (max-width: 330px)
+{
+  body .features_top
+  {
+    width: 100%;
+    
+  }
+  body .logo_features
+  {
+      position: absolute;
+      top: 70px;
+      left: 140px;
+  }
+  body .logo_features img
+  {
+      position: absolute;
+      width: 50px;
+  }
+  body .heart
+  {
+      position: absolute;
+      top: 120px;
+      left: 155px;
+      opacity: 0.2;
+      color: rgb(255,255,255);
+  }
+
+body .heart:before
+  {
+    content: "";
+    width: 90px;
+    height: 3px;
+    position: absolute;
+    left: -120px;
+    top: 13px;
+    background: rgb(53,53,54);
+    opacity: 0.9;
+  }
+body .heart:after
+  {
+    content: "";
+    width: 90px;
+    height: 3px;
+    position: absolute;
+    left: 45px;
+    top: 13px;
+    background: rgb(53,53,54);
+    opacity: 0.9;
+  }
+body .my-flex-container
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: absolute;
+  top: 160px;
+  right: 30px;
+  font-family: 'Open Sans', sans-serif;
+
+}
+body .my-flex-container p
+{
+  font-size: 11px;
+  font-family: 'Open Sans', sans-serif;
+  
+  color: #062033;
+}
+
+body .circle_brand {
+  width: 3em;
+  height: 3em;
+  border: 2px solid #4f78ff;
+  position: absolute;
+  top: 165px;
+  left: 26px;
+  border-radius: 50%;
+  line-height: 10em;
+  
+  background: rgb(239,239,239);
+}
+body .circle_brand img {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  background: rgb(239,239,239);
+}
+ul {
+    /* Убираю маркеры у списка*/
+    list-style: none;
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Убираю отступы. */
+    margin:0px;
+    /* Убираю еще отступы! */
+    padding:0px;
+  }
+ul:after {
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Убираю выравнивание. */
+    float: none;
+    content: ' ';
+    clear: both;
+}
+body .circle_devel
+  {
+    width: 3em;
+    height: 3em;
+    border: 2px solid #4f78ff;
+    position: absolute;
+    top: 290px;
+    left: 28px;
+    border-radius: 50%;
+    line-height: 10em;
+  }
+body .circle_devel img {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  background: rgb(239,239,239);
+}
+body .circle_consul
+  {
+    width: 3em;
+    height: 3em;
+    border: 2px solid #4f78ff;
+    position: absolute;
+    top: 410px;
+    left: 29px;
+    border-radius: 50%;
+    line-height: 10em;
+  }
+
+body .circle_consul img 
+  {
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    background: rgb(239,239,239);
+  }
+
+}
+
+
+/*=======================================
+* /BODY
+=========================================*/
+
+
+
+/*=======================================
+* RESPONSIVE Design
+=========================================*/
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
